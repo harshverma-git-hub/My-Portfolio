@@ -1,40 +1,48 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Harsh Verma — Portfolio</title>
-  <!-- Tailwind Play CDN (fast for prototyping). You asked for CDN. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Harsh Verma — Mobile Experience</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    // Optional: extend Tailwind theme via CDN
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            primary: '#0ea5a4', // teal-500-ish
-            accent: '#7c3aed' // violet-600-ish
+            midnight: '#050811',
+            glassCard: 'rgba(15, 23, 42, 0.75)',
+            electricCyan: '#06B6D4',
+            neonViolet: '#A855F7',
+            hotPink: '#EC4899',
+            emeraldGlow: '#10B981'
+          },
+          animation: {
+            'float-slow': 'float 5s ease-in-out infinite',
+            'glow-pulse': 'glow 3s ease-in-out infinite alternate',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+              '50%': { transform: 'translateY(-8px) rotate(1deg)' }
+            },
+            glow: {
+              '0%': { opacity: '0.4', filter: 'blur(20px)' },
+              '100%': { opacity: '0.8', filter: 'blur(35px)' }
+            }
           }
         }
       }
     }
-    console.log("Hello i am executing");
   </script>
-  <!-- Google Fonts (optional) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
-<link rel="icon" type="image/png" href="/My-Portfolio/logo.png" />
-  <script type="module" crossorigin src="/My-Portfolio/assets/index-DaDIUQit.js"></script>
-  <link rel="stylesheet" crossorigin href="/My-Portfolio/assets/index-D-0FdOgb.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <script type="module" crossorigin src="/assets/index-BPLxgR7m.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-ER2JDiX5.css">
 </head>
-
-<body class="antialiased text-gray-800 bg-white font-sans">
+<body class="antialiased text-slate-100 bg-[#050811] font-['Plus_Jakarta_Sans',sans-serif] selection:bg-cyan-500 selection:text-white pb-24 md:pb-0 overflow-x-hidden">
   <div id="root"></div>
 </body>
-
 </html>
