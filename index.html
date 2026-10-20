@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Harsh Verma — Portfolio v8</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Cabinet Grotesk', 'Plus Jakarta Sans', 'sans-serif'],
+            display: ['Sora', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+            mono: ['Fira Code', 'monospace']
+          },
+          colors: {
+            midnight: '#05070C',
+            paperLight: '#F7F6F2',
+            paperDark: '#090C15',
+            royalCyan: '#06B6D4',
+            vibrantPurple: '#8B5CF6'
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=Cabinet+Grotesk:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="icon" type="image/png" href="/logo.png" />
+</head>
+<body class="antialiased font-sans bg-paperLight text-slate-900 dark:bg-paperDark dark:text-slate-100 selection:bg-cyan-500 selection:text-white pb-24 md:pb-0 overflow-x-hidden transition-colors duration-500">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
